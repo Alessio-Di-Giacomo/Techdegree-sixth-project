@@ -88,7 +88,7 @@ keyboard.addEventListener('click', (e) =>{
         // If there is no match, remove one heart and increase missed counter
         if (match === null){
             missed++;
-            lifes[0].firstChild.src = 'http://127.0.0.1:5500/images/lostHeart.png';
+            lifes[0].firstChild.src = '/images/lostHeart.png';
             lifes[0].className = 'lost';
             lost();
         } // Show winning screen if letters that have show class equals letter that have letter class and give value for reset func
@@ -123,7 +123,7 @@ function reset() {
     // Changes image and class of hearts to reset them
     function resetHearts() {
         for (i = 0; i < lostLifes.length; i + 0) {
-            lostLifes[i].firstChild.src = 'http://127.0.0.1:5500/images/liveHeart.png';
+            lostLifes[i].firstChild.src = '/images/liveHeart.png';
             lostLifes[i].className = 'tries';
         }  
     }
